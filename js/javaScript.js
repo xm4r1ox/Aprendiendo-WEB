@@ -22,3 +22,13 @@ window.addEventListener("click", (event) => {
         infoModal.style.display = "none";
     }
 });
+
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        alert("¡Gracias por tu mensaje! Nuestro equipo se pondrá en contacto contigo muy pronto.");
+        contactForm.reset();
+    });
+}

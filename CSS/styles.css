@@ -55,7 +55,9 @@ body {
 .navbar .menu a:hover {
     color: rgb(152, 142, 141);
     transform: scale(1.1);
+    position: relative;
 }
+
 
 .navbar .menu-bar {
     display: none;
@@ -233,5 +235,270 @@ body {
 .close-btn{
     font-size: 28px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Page hero (Modelos / Servicios / Contacto) */
+
+.page-hero {
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.page-hero .info-content {
+    grid-column: 2/9;
+    grid-row: 3/5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.page-hero h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.page-hero h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #F5F4F0;
+}
+
+.page-hero p {
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 600px;
+}
+
+.hero-modelos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(87, 86, 86, 0.6)), url('../img/ty.png');
+}
+
+.hero-servicios {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(87, 86, 86, 0.6)), url('../img/3.png');
+}
+
+.hero-contacto {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(87, 86, 86, 0.6)), url('../img/1.jpg');
+}
+
+
+/* Modelos */
+
+.models {
+    padding: 60px 40px;
+    background: #fff;
+}
+
+.models h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.models-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.model-card {
+    background: #F5F4F0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+}
+
+.model-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.model-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.model-card .model-info {
+    padding: 20px;
+}
+
+.model-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.model-card p {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.model-card .btn {
+    width: 100%;
+    height: 45px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.model-card .btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+
+/* Servicios */
+
+.services {
+    padding: 60px 40px;
+    background: #F5F4F0;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card i {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+
+/* Contacto */
+
+.contact {
+    padding: 60px 40px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.contact-info ul {
+    list-style: none;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-info i {
+    color: #000;
+    font-size: 1.2rem;
+    width: 20px;
+}
+
+.contact-info .map-frame iframe {
+    width: 100%;
+    height: 280px;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form .btn {
+    width: 200px;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.contact-form .btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    transition: all 0.4s;
     cursor: pointer;
 }

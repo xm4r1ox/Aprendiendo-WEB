@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porsche</title>
+    <title>Porsche - Contacto</title>
     <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="stylesheet" href="./CSS/mediaQuery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <link rel="shortcut icon" href="./img/11.png" type="image/x-icon">
 </head>
 
-<body>
+<body> <!-- CONTACTO -->
 
     <header>
         <div class="navbar">
@@ -22,7 +22,7 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="modelos.html">Modelos</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
             </ul>
 
             <div class="menu-bar" id="menu-bar">
@@ -37,47 +37,47 @@
 
     <!-- Main content -->
 
-    <main class="hero">
+    <main class="page-hero hero-contacto">
         <div class="info-content">
-            <h3>Vive la experiencia Porsche</h3>
-            <h1>Agencia Porsche Colombia</h1>
-            <p>Descubre el lujo y el rendimiento de los vehículos Porsche. Adecuado para quienes buscan la excelencia en
-                diseño y tecnología.
-                la mejor de la ingeniería automotriz alemana, con un legado de innovación y pasión por la conducción.
-            </p>
-            <button class="btn" id="readMoreBtn">Leer más</button>
+            <h3>Hablemos</h3>
+            <h1>Contáctanos</h1>
+            <p>Nuestro equipo en Bogotá está listo para resolver tus dudas, agendar un test drive o
+                atender tu vehículo.</p>
         </div>
+    </main>
 
-        <div class="modal" id="infoModal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Mas Información</h2>
-                    <span class="close-btn" id="closeBtn">&times;</span>
-                </div>
+    <!-- Contacto -->
 
-                <p>Explora la experiencia Porsche desde una perspectiva única: innovación, diseño excepcional y alto
-                    rendimiento en cada detalle. Aquí encontrarás una visión de la excelencia automotriz alemana, donde
-                    la ingeniería se combina con la pasión por la conducción para ofrecer modelos que desafían los
-                    límites y elevan cada trayecto a una experiencia inolvidable.
-                </p>
+    <section class="contact">
 
-                <h3>Caracteristicas principales de nuestros autos</h3>
+        <div class="contact-info">
+            <h2>Información de contacto</h2>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i> Carrera 7 # 72-41, Bogotá, Colombia</li>
+                <li><i class="fa-solid fa-phone"></i> +57 601 555 0123</li>
+                <li><i class="fa-solid fa-envelope"></i> contacto@porschecolombia.com</li>
+                <li><i class="fa-solid fa-clock"></i> Lunes a sábado: 8:00 am - 6:00 pm</li>
+            </ul>
 
-                <ul>
-                    <li>Diseño elegante y aerodinámico</li>
-                    <li>Motor de alto rendimiento</li>
-                    <li>Tecnología avanzada de conducción</li>
-                    <li>Interiores de lujo y máximo confort</li>
-                    <li>Sistemas inteligentes de seguridad</li>
-                    <li>Experiencia de conducción deportiva</li>
-                </ul>
-
-                <p>Visítanos en nuestra ubicación: Carrera 7 # 72-41, Bogotá, Colombia, y descubre de cerca nuestros modelos y servicios exclusivos.</p>
-
+            <div class="map-frame">
+                <iframe
+                    src="https://www.google.com/maps?q=Carrera%207%20%2372-41%2C%20Bogot%C3%A1%2C%20Colombia&output=embed"
+                    allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
 
-    </main>
+        <div class="contact-form">
+            <h2>Envíanos un mensaje</h2>
+            <form id="contactForm">
+                <input type="text" name="nombre" placeholder="Nombre completo" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <input type="tel" name="telefono" placeholder="Teléfono">
+                <textarea name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+                <button type="submit" class="btn">Enviar mensaje</button>
+            </form>
+        </div>
+
+    </section>
 
     <!-- Footer -->
 

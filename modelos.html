@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porsche</title>
+    <title>Porsche - Modelos</title>
     <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="stylesheet" href="./CSS/mediaQuery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <link rel="shortcut icon" href="./img/11.png" type="image/x-icon">
 </head>
 
-<body>
+<body> <!-- MODELOS -->
 
     <header>
         <div class="navbar">
@@ -37,47 +37,54 @@
 
     <!-- Main content -->
 
-    <main class="hero">
+    <main class="page-hero hero-modelos">
         <div class="info-content">
-            <h3>Vive la experiencia Porsche</h3>
-            <h1>Agencia Porsche Colombia</h1>
-            <p>Descubre el lujo y el rendimiento de los vehículos Porsche. Adecuado para quienes buscan la excelencia en
-                diseño y tecnología.
-                la mejor de la ingeniería automotriz alemana, con un legado de innovación y pasión por la conducción.
-            </p>
-            <button class="btn" id="readMoreBtn">Leer más</button>
+            <h3>Explora la gama</h3>
+            <h1>Nuestros Modelos</h1>
+            <p>Cada Porsche está diseñado para ofrecer una experiencia de conducción única, combinando
+                rendimiento, tecnología y un diseño que no pasa desapercibido.</p>
         </div>
-
-        <div class="modal" id="infoModal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Mas Información</h2>
-                    <span class="close-btn" id="closeBtn">&times;</span>
-                </div>
-
-                <p>Explora la experiencia Porsche desde una perspectiva única: innovación, diseño excepcional y alto
-                    rendimiento en cada detalle. Aquí encontrarás una visión de la excelencia automotriz alemana, donde
-                    la ingeniería se combina con la pasión por la conducción para ofrecer modelos que desafían los
-                    límites y elevan cada trayecto a una experiencia inolvidable.
-                </p>
-
-                <h3>Caracteristicas principales de nuestros autos</h3>
-
-                <ul>
-                    <li>Diseño elegante y aerodinámico</li>
-                    <li>Motor de alto rendimiento</li>
-                    <li>Tecnología avanzada de conducción</li>
-                    <li>Interiores de lujo y máximo confort</li>
-                    <li>Sistemas inteligentes de seguridad</li>
-                    <li>Experiencia de conducción deportiva</li>
-                </ul>
-
-                <p>Visítanos en nuestra ubicación: Carrera 7 # 72-41, Bogotá, Colombia, y descubre de cerca nuestros modelos y servicios exclusivos.</p>
-
-            </div>
-        </div>
-
     </main>
+
+    <!-- Modelos -->
+
+    <section class="models">
+        <h2>Modelos disponibles</h2>
+
+        <div class="models-grid">
+
+            <article class="model-card">
+                <img src="./img/2.png" alt="Porsche 911 Carrera">
+                <div class="model-info">
+                    <h3>911 Carrera</h3>
+                    <p>El deportivo más icónico de la marca. Equilibrio perfecto entre potencia, manejo preciso
+                        y un diseño atemporal para el día a día y la pista.</p>
+                    <button class="btn">Ver detalles</button>
+                </div>
+            </article>
+
+            <article class="model-card">
+                <img src="./img/5.png" alt="Porsche 911 GT3 RS">
+                <div class="model-info">
+                    <h3>911 GT3 RS</h3>
+                    <p>Tecnología directa de competición: aerodinámica activa, motor atmosférico de alta
+                        revolución y un chasis afinado para exprimir cada curva.</p>
+                    <button class="btn">Ver detalles</button>
+                </div>
+            </article>
+
+            <article class="model-card">
+                <img src="./img/4.png" alt="Línea GT Porsche">
+                <div class="model-info">
+                    <h3>Línea GT</h3>
+                    <p>Nuestra familia de modelos de alto rendimiento, pensados para quienes buscan llevar la
+                        pasión por la conducción deportiva al siguiente nivel.</p>
+                    <button class="btn">Ver detalles</button>
+                </div>
+            </article>
+
+        </div>
+    </section>
 
     <!-- Footer -->
 

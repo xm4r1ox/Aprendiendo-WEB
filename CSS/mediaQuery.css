@@ -92,4 +92,34 @@
     .footer .footer-button {
         grid-column: 1/2;
     }
+
+    /* responsive page-hero */
+
+    .page-hero .info-content {
+        grid-column: 2/9;
+        grid-row: 3/6;
+    }
+
+    .page-hero h1 {
+        font-size: 2rem;
+    }
+
+    /* responsive modelos */
+
+    .models-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* responsive servicios */
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* responsive contacto */
+
+    .contact {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
 }
